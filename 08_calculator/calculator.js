@@ -2,20 +2,17 @@ const add = (a, b) => a + b;
 
 const subtract = (a, b) => a - b;
 
-const sum = function(numbers) {
-  return numbers.reduce((suma, a) => suma + a, 0);
-};
+const sum = numbers => numbers.reduce((suma, a) => suma + a, 0);
 
-const multiply = function() {
+const multiply = numbers => numbers.reduce((mult, a) => mult * a, 1);
 
-};
+const power = (a, b) => a ** b;
 
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = n => {
+	let fact = 1;
+  for (let i = 1; i <= n; i++)
+    fact *= i;
+  return fact;
 };
 
 // Do not edit below this line
